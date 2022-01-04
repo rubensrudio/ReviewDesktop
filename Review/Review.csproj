@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DB150DF-B4E2-41AC-AE13-983ECEBAF2CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Review</RootNamespace>
+    <AssemblyName>Review</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBancoDeDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancoDeDados.Designer.cs">
+      <DependentUpon>frmBancoDeDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCentrosdeCustoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCentrosdeCustoCadastro.Designer.cs">
+      <DependentUpon>frmCentrosdeCustoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCentrosdeCustoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCentrosdeCustoLista.Designer.cs">
+      <DependentUpon>frmCentrosdeCustoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassificacaoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassificacaoCadastro.Designer.cs">
+      <DependentUpon>frmClassificacaoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassificacaoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassificacaoLista.Designer.cs">
+      <DependentUpon>frmClassificacaoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClienteConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClienteConsulta.Designer.cs">
+      <DependentUpon>frmClienteConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesCadastro.Designer.cs">
+      <DependentUpon>frmClientesCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesLista.Designer.cs">
+      <DependentUpon>frmClientesLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresasCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresasCadastro.Designer.cs">
+      <DependentUpon>frmEmpresasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresasLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresasLista.Designer.cs">
+      <DependentUpon>frmEmpresasLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsumosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsumosCadastro.Designer.cs">
+      <DependentUpon>frmInsumosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsumosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsumosLista.Designer.cs">
+      <DependentUpon>frmInsumosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModeloIncluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModeloIncluir.Designer.cs">
+      <DependentUpon>frmModeloIncluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModeloLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModeloLista.Designer.cs">
+      <DependentUpon>frmModeloLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanodeContasCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanodeContasCadastro.Designer.cs">
+      <DependentUpon>frmPlanodeContasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanodeContasLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanodeContasLista.Designer.cs">
+      <DependentUpon>frmPlanodeContasLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropostasCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropostasCadastro.Designer.cs">
+      <DependentUpon>frmPropostasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropostasLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropostasLista.Designer.cs">
+      <DependentUpon>frmPropostasLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuariosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosCadastro.Designer.cs">
+      <DependentUpon>frmUsuariosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuariosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosLista.Designer.cs">
+      <DependentUpon>frmUsuariosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersoes.Designer.cs">
+      <DependentUpon>frmVersoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBancoDeDados.resx">
+      <DependentUpon>frmBancoDeDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCentrosdeCustoCadastro.resx">
+      <DependentUpon>frmCentrosdeCustoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCentrosdeCustoLista.resx">
+      <DependentUpon>frmCentrosdeCustoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassificacaoCadastro.resx">
+      <DependentUpon>frmClassificacaoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassificacaoLista.resx">
+      <DependentUpon>frmClassificacaoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClienteConsulta.resx">
+      <DependentUpon>frmClienteConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesCadastro.resx">
+      <DependentUpon>frmClientesCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesLista.resx">
+      <DependentUpon>frmClientesLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresasCadastro.resx">
+      <DependentUpon>frmEmpresasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresasLista.resx">
+      <DependentUpon>frmEmpresasLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsumosCadastro.resx">
+      <DependentUpon>frmInsumosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsumosLista.resx">
+      <DependentUpon>frmInsumosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModeloIncluir.resx">
+      <DependentUpon>frmModeloIncluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModeloLista.resx">
+      <DependentUpon>frmModeloLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanodeContasCadastro.resx">
+      <DependentUpon>frmPlanodeContasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanodeContasLista.resx">
+      <DependentUpon>frmPlanodeContasLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropostasCadastro.resx">
+      <DependentUpon>frmPropostasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropostasLista.resx">
+      <DependentUpon>frmPropostasLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosCadastro.resx">
+      <DependentUpon>frmUsuariosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosLista.resx">
+      <DependentUpon>frmUsuariosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersoes.resx">
+      <DependentUpon>frmVersoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{c0756cec-b945-4bad-98b2-0c96a3e714cf}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{22b79fd1-ef26-4d4a-b82a-6455feb09567}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{f1230bad-850c-4d67-abe4-79fbed931697}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{d6ef8eb3-9d16-4918-af6e-5c964dde9ad3}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{c61400b4-a293-4b3e-b060-ce03d7a8c897}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvar1.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Novo_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localizar_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
